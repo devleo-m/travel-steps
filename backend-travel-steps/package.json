@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "NODE_ENV=development nodemon --exec ts-node src/web/server.ts",
-    "start:prod": "NODE_ENV=production node dist/server.js"
+    "prod": "NODE_ENV=production node dist/web/server.js"
   },
   "keywords": [],
   "author": "",
