@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 // Carregar variáveis do .env de acordo com o ambiente
 dotenv.config();
 
-console.log('NODE_ENV:', process.env.NODE_ENV);
+console.log('NODE_ENV:', process.env.NODE_ENV || 'development');
 
 const environment = process.env.NODE_ENV;
 
