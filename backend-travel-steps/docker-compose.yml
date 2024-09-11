@@ -1,5 +1,16 @@
-version: '3.8'
 services:
+  app:
+    build: .
+    container_name: travel-steps-app
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    depends_on:
+      - postgres_dev
+    networks:
+      - travel-steps-network
+
   postgres_dev:
     image: postgres:14
     container_name: travel-steps-dev
