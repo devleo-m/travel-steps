@@ -16,7 +16,6 @@ app.get('/', (req, res) => {
     res.send('API está funcionando!');
   });
 
-  
 //inicia o servidor e conectar ao banco de dados
 const startServer = async () => {
   try {
